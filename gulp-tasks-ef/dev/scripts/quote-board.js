@@ -50,3 +50,8 @@ class Bubble {
       this.quote = random(quotes);
     }
   }
+
+show() {
+    image(this.quote, this.x, this.y, this.r, this.r);
+  }
+}
