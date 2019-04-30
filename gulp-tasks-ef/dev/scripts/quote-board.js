@@ -44,3 +44,9 @@ class Bubble {
     this.r = r;
     this.quote = random(quotes);
  }
+
+ clicked(px, py) {
+    if (px > this.x && px < this.x + this.r && py > this.y && py < this.y + this.r) {
+      this.quote = random(quotes);
+    }
+  }
