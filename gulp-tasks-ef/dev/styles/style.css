@@ -41,6 +41,9 @@ h1{
 	font-size: 20px;
     padding: 8px;
     background-color: #ffbd7b;
-	color: #ff7b7b;
 	}
+a {
+	color: #ff7b7b;
+	text-decoration: none;
+}
 
