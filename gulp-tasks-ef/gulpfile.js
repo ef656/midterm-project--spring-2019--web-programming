@@ -146,6 +146,11 @@ exports.transpileJSForDev = transpileJSForDev;
 exports.transpileJSForProd = transpileJSForProd;
 exports.lintJS = lintJS;
 exports.copyUnprocessedAssetsForProd = copyUnprocessedAssetsForProd;
+exports.default = series(
+    serve, 
+    compileCSSForDev, 
+    transpileJSForDev, 
+    validateHTML);
 exports.build = series(
     validateHTML,
     compressHTML,
