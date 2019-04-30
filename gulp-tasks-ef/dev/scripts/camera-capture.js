@@ -6,7 +6,7 @@ function setup() {
 	background (51);
 	video = createCapture(VIDEO);
 	video.size(320, 240);
-
+	video.parent(`video-of-photobooth`);
 	button = createButton('Snap');
 	button.mousePressed(takeSnap);
 }
