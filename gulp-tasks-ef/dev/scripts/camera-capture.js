@@ -7,9 +7,11 @@ function setup() {
 	video.size(320, 240);
 	button = createButton('Snap');
 	button.mousePressed(takeSnap);
-
 }
 
-function draw() {
+function takeSnap() {
 	image (video, 0, 0);
+}
+function draw() {
+	//image (video, 0, 0);
 }
