@@ -14,7 +14,7 @@ const reload = browserSync.reload;
 let compressHTML = () => {
     return src([`dev/html/*.html`,`dev/html/**/*.html`])
         .pipe(htmlCompressor({collapseWhitespace: true}))
-        .pipe(dest(`prod`));
+        .pipe(dest(`prod/html`));
 };
 
 let validateHTML = () => {
@@ -27,7 +27,7 @@ let validateHTML = () => {
 
 
 let compileCSSForDev = () => {
-    return src(`dev/styles/main.scss`)
+    return src(`dev/styles/style.scss`)
         .pipe(sass({
             outputStyle: `expanded`,
             precision: 10
@@ -36,7 +36,7 @@ let compileCSSForDev = () => {
 };
 
 let compileCSSForProd = () => {
-    return src(`dev/styles/main.scss`)
+    return src(`dev/styles/style.scss`)
         .pipe(sass({
             outputStyle: `compressed`,
             precision: 10
@@ -90,7 +90,7 @@ let copyUnprocessedAssetsForProd = () => {
         `!dev/html/*.*`, // or any files in it
         `!dev/html/**`,  // or any sub folders;
         `!dev/img/`,     // ignore images;
-        `!dev/**/*.js`,  // ignore JS;
+        `dev/**/*.js`,  // ignore JS;
         `!dev/styles/**` // and, ignore Sass/CSS.
     ], {dot: true}).pipe(dest(`prod`));
 };
