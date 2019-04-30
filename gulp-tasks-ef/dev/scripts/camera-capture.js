@@ -1,7 +1,8 @@
-var video;
+let video;
 
 function setup() {
-	createCanvas (320, 240);
+	let myCanvas = createCanvas (320, 240);
+	myCanvas.parent(`sketch`);
 	background (51);
 	video = createCapture(VIDEO);
 	video.size(320, 240);
