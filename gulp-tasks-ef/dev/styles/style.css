@@ -44,13 +44,16 @@ h1{
     cursor: pointer;
 }
 
+.button:hover {
+	  background-color: #ffbd7b;
+	  transition: all 3s ease 2s;
+}
 a {
 	color: #ffffff;
 	text-decoration: none;
 }
 
-.button:hover {
-	  background-color: #ffbd7b;
-	  transition: all 3s ease 2s;
-	}
-
+a:hover{
+	color: #000;
+}
+}
