@@ -2,7 +2,7 @@ let video;
 
 function setup() {
 	let myCanvas = createCanvas (320, 240);
-	myCanvas.parent(`sketch`);
+	myCanvas.parent(`video-of-photobooth`);
 	background (51);
 	video = createCapture(VIDEO);
 	video.size(320, 240);
