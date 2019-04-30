@@ -46,7 +46,7 @@ h1{
 
 .button:hover {
 	  background-color: #ffbd7b;
-	  transition: all 3s ease 2s;
+	  transition: all 0.5s ease 0.25s;
 }
 a {
 	color: #ffffff;
@@ -59,6 +59,7 @@ a:hover{
 
 #entry{
   padding-top: 300px;
+  padding-bottom: 80px;
   margin: auto;
   overflow: visible;
   text-align: center;
