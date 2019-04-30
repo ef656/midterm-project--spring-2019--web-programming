@@ -11,6 +11,8 @@ function setup() {
 
 function takeSnap() {
 	image (video, 0, 0);
+
+	save('your-beautiful-face.png');
 }
 function draw() {
 	//image (video, 0, 0);
