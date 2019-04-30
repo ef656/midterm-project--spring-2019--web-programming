@@ -12,8 +12,8 @@ body {
 }
 
 #video-of-photobooth, #button-to-take-snap, #image-of-photobooth {
-	text-align: center;
-	margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 .flex-container {
@@ -58,9 +58,9 @@ a:hover{
 }
 
 #entry{
-	margin-left: auto;
-  margin-right: auto;
+  padding-top: 300px;
+  margin: auto;
   overflow: visible;
   text-align: center;
-  
+  font-size: 70px;
 }
