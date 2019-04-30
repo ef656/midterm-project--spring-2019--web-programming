@@ -36,3 +36,11 @@ function draw() {
     bubbles[i].show();
   }
 }
+
+class Bubble {
+  constructor(x, y, r, img) {
+    this.x = 0;
+    this.y = 0;
+    this.r = r;
+    this.quote = random(quotes);
+ }
