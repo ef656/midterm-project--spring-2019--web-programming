@@ -11,3 +11,15 @@ function preload() {
     quotes[i] = loadImage(`quotes/quote${i}.jpg`);
   }
 }
+
+function setup() {
+  let quoteBoard = createCanvas(600, 600);
+  for (let i = 0; i < 1; i++) {
+    let x = 0;
+    let y = 0;
+    let r = random(600, 600);
+    let b = new Bubble(x, y, r);
+    bubbles.push(b);
+  }
+
+}
