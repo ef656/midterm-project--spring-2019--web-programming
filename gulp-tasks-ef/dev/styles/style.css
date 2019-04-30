@@ -41,6 +41,7 @@ h1{
 	font-size: 20px;
     padding: 8px;
     background-color: #ff7b7b;
+    cursor: pointer;
 }
 
 a {
