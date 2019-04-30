@@ -41,9 +41,15 @@ h1{
 	font-size: 20px;
     padding: 8px;
     background-color: #ff7b7b;
-	}
+}
+
 a {
 	color: #ffffff;
 	text-decoration: none;
 }
+
+.button:hover {
+	  background-color: #ffbd7b;
+	  transition: all 3s ease 2s;
+	}
 
