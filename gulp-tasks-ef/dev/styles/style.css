@@ -36,3 +36,11 @@ h1{
 	font-size: 55px;
 }
 
+.button {
+	width: 40px;
+	font-size: 20px;
+    padding: 8px;
+    background-color: #ffbd7b;
+	color: #ff7b7b;
+	}
+
