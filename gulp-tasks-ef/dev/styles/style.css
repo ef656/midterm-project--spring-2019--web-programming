@@ -65,3 +65,9 @@ a:hover{
   text-align: center;
   font-size: 70px;
 }
+
+#entry-text{
+	padding-bottom: 40px;
+	padding-right: 80px;
+	padding-left: 80px;
+}
