@@ -9,6 +9,8 @@ function setup() {
 	video.parent(`video-of-photobooth`);
 	button = createButton('Snap');
 	button.mousePressed(takeSnap);
+	button.parent(`button-to-take-snap`);
+
 }
 
 function takeSnap() {
