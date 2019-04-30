@@ -22,5 +22,17 @@ function setup() {
     bubbles.push(b);
   }
   quoteBoard.parent(`quote-board`)
+}
 
+function mousePressed() {
+  for (let i = 0; i < bubbles.length; i++) {
+    bubbles[i].clicked(mouseX, mouseY);
+  }
+}
+
+function draw() {
+  background(0);
+  for (let i = 0; i < bubbles.length; i++) {
+    bubbles[i].show();
+  }
 }
