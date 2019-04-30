@@ -1,11 +1,11 @@
 let video;
 
 function setup() {
-	let myCanvas = createCanvas (320, 240);
+	let myCanvas = createCanvas (480, 360);
 	myCanvas.parent(`image-of-photobooth`);
-	background (51);
+	background (255,202,148);
 	video = createCapture(VIDEO);
-	video.size(320, 240);
+	video.size(480, 360);
 	video.parent(`video-of-photobooth`);
 	button = createButton('Snap');
 	button.mousePressed(takeSnap);
